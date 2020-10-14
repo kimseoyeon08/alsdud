@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>예제 1 with 책</title>
+        <style>
+            .prod-list .caption {
+                position: absolute;
+                padding-top: 20px;
+                background: rgba(0, 0, 0, 0.6);
+                width: 300px;
+                height: 200px;
+                top: 200px;
+                opacity: 1;
+                -moz-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                -webkit-transition: all 0.2s ease-in-out;
+                z-index: 10;
+            }
+            .prod-list li:hover .caption {
+                opacity: 1;
+                -moz-transform: translateY(-200px);
+                -ms-transform: translateY(-200px);
+                -o-transition: translateY(-200px);
+                -webkit-transition: translateY(-200px);
+                transform: translateY(-200px);
+            }
+            .prod-list .caption h1 .prod-list .caption p {
+                color: #fff;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>신상품 목록</h1>
+        <div class="prod-list">
+            <li>
+                <img src="rainbow.jpeg">
+                <div class="caprion">
+                    <h1>상품</h1>
+                    <p> 상품 1 설명 텍스트</p>
+                    <p> 가격 : 12,345원</p>
+                </div>
+            </li>
+            <li>.....</li>
+            <li>.....</li>
+        </div>
+    </body>
+</html>
